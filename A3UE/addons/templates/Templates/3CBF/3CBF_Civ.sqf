@@ -208,45 +208,45 @@ private _dlchats = [];
 private _loadoutData = call _fnc_createLoadoutData;
 
 if (_hasCSLA) then {
-  #include "..\DLC_content\gear\CSLA\Vanilla_CIV.sqf"
+  #include "A3A\addons\core\Templates\Templates\DLC_content\gear\CSLA\Vanilla_CIV.sqf"
 };
 
 if (_hasApex) then {
-  #include "..\DLC_content\gear\Apex\Vanilla_CIV.sqf"
+  #include "A3A\addons\core\Templates\Templates\DLC_content\gear\Apex\Vanilla_CIV.sqf"
 };
 if (_hasArtOfWar) then {
-  #include "..\DLC_content\gear\Artofwar\Vanilla_CIV.sqf"
+  #include "A3A\addons\core\Templates\Templates\DLC_content\gear\Artofwar\Vanilla_CIV.sqf"
 };
 if (_hasContact) then {
-  #include "..\DLC_content\gear\Contact\Vanilla_CIV.sqf"
+  #include "A3A\addons\core\Templates\Templates\DLC_content\gear\Contact\Vanilla_CIV.sqf"
 };
 
 if (_hasLawsOfWar) then {
-  #include "..\DLC_content\gear\Lawsofwar\Vanilla_CIV.sqf"
+  #include "A3A\addons\core\Templates\Templates\DLC_content\gear\Lawsofwar\Vanilla_CIV.sqf"
 };
 
 if (_hasGM) then {
-  #include "..\DLC_content\gear\GM\Vanilla_CIV.sqf"
+  #include "A3A\addons\core\Templates\Templates\DLC_content\gear\GM\Vanilla_CIV.sqf"
 };
 
 if (_hasWs) then {
-  #include "..\DLC_content\gear\WS\Vanilla_CIV.sqf"
+  #include "A3A\addons\core\Templates\Templates\DLC_content\gear\WS\Vanilla_CIV.sqf"
 };
 
 if (_hasWs && {(toLowerANSI worldName) in ["sefrouramal", "takistan"]}) then {
-  #include "..\DLC_content\gear\WS\Vanilla_CIV_desert.sqf"
+  #include "A3A\addons\core\Templates\Templates\DLC_content\gear\WS\Vanilla_CIV_desert.sqf"
 };
 
 if (_hasRF) then {
-  #include "..\DLC_content\gear\RF\Vanilla_CIV.sqf"
+  #include "A3A\addons\core\Templates\Templates\DLC_content\gear\RF\Vanilla_CIV.sqf"
 };
 
 if (_hasSOG) then {
-  #include "..\DLC_content\gear\SOG\Vanilla_CIV.sqf"
+  #include "A3A\addons\core\Templates\Templates\DLC_content\gear\SOG\Vanilla_CIV.sqf"
 };
 
 if (_hasSPE) then {
-  #include "..\DLC_content\gear\SPE\Vanilla_CIV.sqf"
+  #include "A3A\addons\core\Templates\Templates\DLC_content\gear\SPE\Vanilla_CIV.sqf"
 };
 
 _loadoutData set ["uniforms", _civUniforms + _dlcUniforms];
