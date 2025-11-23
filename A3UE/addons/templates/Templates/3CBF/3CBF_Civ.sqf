@@ -20,50 +20,51 @@ private _hasEF = "ef" in A3A_enabledDLC;
 //////////////////////////
 
 ["vehiclesCivCar", [
-    "UK3CB_C_Datsun_Closed", 0.5
-    ,"UK3CB_C_Datsun_Open", 1.0            // cargo capable
-    ,"UK3CB_C_Gaz24", 1
-    ,"UK3CB_C_Golf", 1
-    ,"UK3CB_C_Hatchback", 1
-    ,"UK3CB_C_Hilux_Closed", 0.5
-    ,"UK3CB_C_Hilux_Open", 0.5            // cargo capable
-    ,"UK3CB_C_Lada", 0.9
+    "UK3CB_C_Datsun_Closed", 0.1
+    ,"UK3CB_C_Datsun_Open", 0.4            // cargo capable
+    ,"UK3CB_C_Gaz24", 0.5
+    ,"UK3CB_C_Golf", 0.5
+    ,"UK3CB_C_Hatchback", 0.5
+    ,"UK3CB_C_Hilux_Closed", 0.1
+    ,"UK3CB_C_Hilux_Open", 0.4            // cargo capable
+    ,"UK3CB_C_Lada", 0.4
     ,"UK3CB_TKC_C_Lada_Taxi", 0.1
-    ,"UK3CB_C_LandRover_Softtop_Transport_Closed", 0.5        // land rovers
-    ,"UK3CB_C_LandRover_Softtop_Transport_Open", 0.5
-    ,"UK3CB_C_Landcruiser", 1
-    ,"UK3CB_C_MMT", 1
-    ,"UK3CB_C_Octavia", 1
-    ,"UK3CB_C_OLD_BIKE", 1
-    ,"UK3CB_C_Pickup",1
-    ,"UK3CB_C_S1203", 1
-    ,"UK3CB_C_Sedan", 1
-    ,"UK3CB_C_Skoda", 1
-    ,"UK3CB_C_SUV", 0.3
-    ,"UK3CB_C_Tractor_Old", 0.05
-    ,"UK3CB_C_TT650", 1
-    ,"UK3CB_C_YAVA", 1
+    ,"UK3CB_C_LandRover_Softtop_Transport_Closed", 0.1        // land rovers
+    ,"UK3CB_C_LandRover_Softtop_Transport_Open", 0.4
+    ,"UK3CB_C_Landcruiser", 0.5
+    ,"UK3CB_C_MMT", 0,5
+    ,"UK3CB_C_Octavia", 0.5
+    ,"UK3CB_C_OLD_BIKE", 0.5
+    ,"UK3CB_C_Pickup",0.5
+    ,"UK3CB_C_S1203", 0.5
+    ,"UK3CB_C_Sedan", 0.5
+    ,"UK3CB_C_Skoda", 0.5
+    ,"UK3CB_C_SUV", 0.5
+    ,"UK3CB_C_TT650", 0.5
+    ,"UK3CB_C_YAVA", 0.5
 
 ]] call _fnc_saveToTemplate;
 
 ["vehiclesCivIndustrial", [
-    "UK3CB_C_Kamaz_Covered", 0.3
-    ,"UK3CB_C_Kamaz_Open", 0.3
-    ,"UK3CB_C_Ural_Covered", 0.3                // Urals
-    ,"UK3CB_C_Ural_Open", 0.3
-    ,"UK3CB_C_V3S_Closed", 0.3
-    ,"UK3CB_C_V3S_Open", 0.3
-    ,"RHS_Ural_Civ_01", 0.3
-    ,"RHS_Ural_Civ_02", 0.3
-    ,"RHS_Ural_Civ_03", 0.3
-    ,"RHS_Ural_Open_Civ_01", 0.3
-    ,"RHS_Ural_Open_Civ_02", 0.3
-    ,"RHS_Ural_Open_Civ_03", 0.3
-    ,"UK3CB_C_Forklift", 0.1
-    ,"UK3CB_C_Tractor", 0.1
+    "UK3CB_C_Kamaz_Covered", 0.2
+    ,"UK3CB_C_Kamaz_Open", 0.1
+    ,"UK3CB_C_Ural_Covered", 0.2                // Urals
+    ,"UK3CB_C_Ural_Open", 0.1
+	
+    ,"UK3CB_C_V3S_Closed", 0.2
+    ,"UK3CB_C_V3S_Open", 0.1
+    ,"RHS_Ural_Civ_01", 0.05
+    ,"RHS_Ural_Civ_02", 0.05
+    ,"RHS_Ural_Civ_03", 0.05
+    ,"RHS_Ural_Open_Civ_01", 0.05
+    ,"RHS_Ural_Open_Civ_02", 0.05
+    ,"RHS_Ural_Open_Civ_03", 0.05
+    ,"UK3CB_C_Forklift", 0.3
+    ,"UK3CB_C_Tractor", 0.2
+    ,"UK3CB_C_Tractor_Old", 0.1
     ,"UK3CB_C_UAZ_Closed", 0.1
     ,"UK3CB_C_UAZ_Open", 0.2
-	  ,"UK3CB_C_Ural_Recovery", 0.01
+	  ,"UK3CB_C_Ural_Recovery", 0.05
     ]] 
     
     call _fnc_saveToTemplate;
@@ -71,12 +72,12 @@ private _hasEF = "ef" in A3A_enabledDLC;
 ["vehiclesCivBoat", [
     "UK3CB_C_Fishing_Boat", 0.3
     ,"UK3CB_C_Fishing_Boat_Smuggler_VIV_FFV", 0.1
-    ,"UK3CB_C_Fishing_Boat_Smuggler", 0.2
+    ,"UK3CB_C_Fishing_Boat_Smuggler", 0.1
     ,"UK3CB_C_Fishing_Boat_VIV_FFV", 0.1
-    ,"UK3CB_C_Small_Boat_Closed", 0.7
-    ,"UK3CB_C_Small_Boat_Open", 0.8
-    ,"UK3CB_C_Small_Boat_Wood", 0.9
-    ,"rhsgref_civ_canoe", 1
+    ,"UK3CB_C_Small_Boat_Closed", 0.2
+    ,"UK3CB_C_Small_Boat_Open", 0.3
+    ,"UK3CB_C_Small_Boat_Wood", 0.5
+    ,"rhsgref_civ_canoe", 0.5
     ]] call _fnc_saveToTemplate;
 
 ["vehiclesCivRepair", [
@@ -99,7 +100,7 @@ private _hasEF = "ef" in A3A_enabledDLC;
 ["vehiclesCivPlanes", [
   "UK3CB_C_AC500", 1
   ,"UK3CB_C_Antonov_An2", 1
-  ,"UK3CB_C_Cessna_172", 2
+  ,"UK3CB_C_Cessna_172", 1
   ,"UK3CB_C_DC3", 1
   ,"UK3CB_MEC_C_C400", 1
   ]
@@ -109,12 +110,12 @@ private _hasEF = "ef" in A3A_enabledDLC;
 
 ["vehiclesCivHeli", [
   "UK3CB_C_Bell412_Medic", 0.5
-  ,"RHS_Mi8amt_civilian", 1
-  ,"RHS_Mi8t_civilian", 1
+  ,"RHS_Mi8amt_civilian", 0.5
+  ,"RHS_Mi8t_civilian", 0.5
   ,"UK3CB_C_Bell412_Medic", 0.5
   ,"UK3CB_C_Bell412_Luxury", 0.2
-  ,"UK3CB_C_Bell412_Civ", 1
-  ,"UK3CB_C_UH1H", 1
+  ,"UK3CB_C_Bell412_Civ", 0.5
+  ,"UK3CB_C_UH1H", 0.5
   ,"UK3CB_C_Bell412_Civ_IDAP", 0.1
   ,"UK3CB_C_Bell412_FLIR_IDAP", 0.1
   ,"UK3CB_C_Bell412_Medic_IDAP", 0.1
