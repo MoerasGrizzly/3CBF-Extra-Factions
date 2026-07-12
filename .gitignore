@@ -23,3 +23,4 @@ PreparedMissions/
 #Ignore test templates
 Map-Templates/Antistasi-TEST-**
 A3UE/addons/templates/Templates/3CBF/.3CBF_AI_MDF_CW.sqf.kate-swp
+*.kate-swp

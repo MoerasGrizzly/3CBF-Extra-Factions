@@ -99,16 +99,14 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ///////////////////////////
 
 private _initialRebelEquipment = [
-    ["rhsusf_weap_m1911a1", 5], ["rhsusf_mag_7x45acp_MHP", 10],
-    ["UK3CB_BHP", 3], ["UK3CB_BHP_9_13Rnd", 6]
-    "UK3CB_Enfield", "UK3CB_Enfield_10rnd_Mag", "UK3CB_Enfield_10rnd_Mag_RT",
+    ["rhsusf_weap_m1911a1", 3], ["rhsusf_mag_7x45acp_MHP", 6]
     "UK3CB_M1903A1", "UK3CB_M1903A1_3006_5rnd_Magazine", "UK3CB_M1903A1_3006_5rnd_Magazine_RT",
     "rhs_weap_kar98k", "rhsgref_5Rnd_792x57_kar98k",
     ["uk3cb_m1_advisor_carbine", 3], ["UK3CB_M1_15Rnd_30Carbine_Magazine_R", 9],
     "rhs_weap_Izh18", "rhsgref_1Rnd_00Buck", "rhsgref_1Rnd_Slug",
     "rhs_grenade_anm8_mag", "rhs_grenade_mki_mag", "rhs_grenade_mkii_mag",
-    ["rhs_weap_panzerfaust60", 5],
-    ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],
+    ["rhs_weap_panzerfaust60", 3],
+    ["IEDUrbanSmall_Remote_Mag", 3], ["IEDLandSmall_Remote_Mag", 3], ["IEDUrbanBig_Remote_Mag", 1], ["IEDLandBig_Remote_Mag", 1],
     "B_FieldPack_oli",
     "rhssaf_zrak_rd7j",
     "rhs_weap_rsp30_white","rhs_mag_rsp30_white",
