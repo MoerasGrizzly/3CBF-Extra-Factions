@@ -420,7 +420,8 @@ _militaryLoadoutData set ["grenadeLaunchers", [
 ]];
 _militaryLoadoutData set ["SMGs", [
     ["uk3cb_mat49", "", "", "", ["UK3CB_MAT49_32Rnd_9x19_Magazine_R"], [], ""],
-    ["UK3CB_Sten", "", "", "", ["UK3CB_Sten_34Rnd_Magazine_R"], [], ""]
+    ["UK3CB_Sten", "", "", "", ["UK3CB_Sten_34Rnd_Magazine_R"], [], ""],
+	["uk3cb_carlg_m45", "", "", "", ["uk3cb_carlg_m45_36rnd_magazine_Y", "uk3cb_carlg_m45_36rnd_magazine"], [], ""]
 ]];
 _militaryLoadoutData set ["machineGuns", [
     ["UK3CB_Bren_L4_LMG", "", "", "", ["UK3CB_Bren_30Rnd_762x51_Magazine_R", "UK3CB_Bren_30Rnd_762x51_Magazine_RT"], [], ""],
@@ -458,7 +459,8 @@ _policeLoadoutData set ["SMGs", [
     ["UK3CB_Sten", "", "", "", ["UK3CB_Sten_34Rnd_Magazine_RT"], [""], ""],
     ["uk3cb_mat49", "", "", "", ["UK3CB_MAT49_32Rnd_9x19_Magazine_RT"], [""], ""],
     ["uk3cb_m1a1_carbine_blk", "", "", "", ["UK3CB_M1_15Rnd_30Carbine_Magazine_RT"], [], ""],
-    ["uk3cb_m2a1_carbine_blk", "", "", "", ["UK3CB_M1_15Rnd_30Carbine_Magazine_RT"], [], ""]
+    ["uk3cb_m2a1_carbine_blk", "", "", "", ["UK3CB_M1_15Rnd_30Carbine_Magazine_RT"], [], ""],
+	["uk3cb_carlg_m45", "", "", "", ["uk3cb_carlg_m45_36rnd_magazine_Y", "uk3cb_carlg_m45_36rnd_magazine"], [], ""]
 ]];
 _policeLoadoutData set ["sidearms", [
     ["UK3CB_BHP", "", "", "", [], [], ""]
@@ -501,8 +503,8 @@ _militiaLoadoutData set ["grenadeLaunchers", [
 ]];
 _militiaLoadoutData set ["SMGs",
     ["uk3cb_thompson_m1a1", "", "", "", ["UK3CB_Thompson_30rnd_1143x23_M1911B_Magazine_R"], [], ""],
-    ["UK3CB_Sten", "", "", "", ["UK3CB_Sten_34Rnd_Magazine_R"], [], ""],
-    ["rhs_weap_m3a1", "", "", "", ["rhsgref_30rnd_1143x23_M1911B_SMG"], [], ""]
+    ["rhs_weap_m3a1", "", "", "", ["rhsgref_30rnd_1143x23_M1911B_SMG"], [], ""],
+	["uk3cb_carlg_m45", "", "", "", ["uk3cb_carlg_m45_36rnd_magazine_Y", "uk3cb_carlg_m45_36rnd_magazine"], [], ""]
 
 _militiaLoadoutData set ["machineGuns", [
     ["UK3CB_Bren_303", "", "", "", ["UK3CB_Bren_30Rnd_303_Magazine_R", "UK3CB_Bren_30Rnd_303_Magazine", "UK3CB_Bren_30Rnd_303_Magazine_RT"], [], ""],
