@@ -5,9 +5,9 @@
 ["name", "MDF"] call _fnc_saveToTemplate;
 ["spawnMarkerName", format [localize "STR_supportcorridor", "MDF"]] call _fnc_saveToTemplate;
 
-["flag", "Flag_MAL"] call _fnc_saveToTemplate;
-["flagTexture", "uk3cb_factions\addons\uk3cb_factions_mdf\flag\mal_flag_co.paa"] call _fnc_saveToTemplate;
-["flagMarkerType", "UK3CB_Marker_MAL"] call _fnc_saveToTemplate;
+["flag", "Flag_MDF"] call _fnc_saveToTemplate;
+["flagTexture", "\UK3CB_Factions\addons\UK3CB_Factions_MDF\Flag\MDF_flag_co.paa"] call _fnc_saveToTemplate;
+["flagMarkerType", "UK3CB_Marker_MDF"] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Vehicles       //

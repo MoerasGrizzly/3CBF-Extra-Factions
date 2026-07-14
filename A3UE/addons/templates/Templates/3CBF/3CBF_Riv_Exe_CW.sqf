@@ -9,6 +9,7 @@
 //       	Identities    			//
 //////////////////////////////////////
 private _faces = [
+	"GreekHead_A3_01",
 	"GreekHead_A3_02",
 "GreekHead_A3_03",
 "GreekHead_A3_04",
@@ -32,7 +33,7 @@ private _faces = [
 "RussianHead_4",
 "RussianHead_5"
 ];
-["voices", ["Male01GRE","Male02GRE","Male03GRE","Male04GRE","Male05GRE","Male06GRE","Male01ENGFRE","Male02ENGFRE","RHS_Male01CZ","RHS_Male02CZ","RHS_Male03CZ", "RHS_Male04CZ", "RHS_Male05CZ"]] call _fnc_saveToTemplate;
+["voices", ["Male01GRE","Male02GRE","Male03GRE","Male04GRE","Male05GRE","Male06GRE","Male01ENGB","Male02ENGB","Male03ENGB","Male04ENGB","Male05ENGB","Male01FRE","Male02FRE","Male03FRE","Male01ENGFRE","Male02ENGFRE","RHS_Male01CZ","RHS_Male02CZ","RHS_Male03CZ","RHS_Male04CZ", "RHS_Male05CZ", "Male01RUS", "Male02RUS", "Male03RUS", "RHS_Male01RUS", "RHS_Male02RUS", "RHS_Male03RUS", "RHS_Male04RUS", "RHS_Male05RUS"]] call _fnc_saveToTemplate;
 ["faces", _faces] call _fnc_saveToTemplate;
 
 //////////////////////////
@@ -44,7 +45,7 @@ private _faces = [
 ["vehiclesRivalsLightArmed", ["UK3CB_O_G_Datsun_Pickup_PKM", "UK3CB_O_G_Hilux_Igla_Chair", "UK3CB_O_G_Hilux_GMG", "UK3CB_O_G_Hilux_Rocket_Arty", "UK3CB_O_G_Hilux_BMP", "UK3CB_O_G_Hilux_BTR", "UK3CB_O_G_Hilux_Dshkm", "UK3CB_O_G_Hilux_M2", "UK3CB_O_G_Hilux_Metis", "UK3CB_O_G_Hilux_Mortar", "UK3CB_O_G_Hilux_Pkm", "UK3CB_O_G_Hilux_Rocket", "UK3CB_O_G_Hilux_Spg9", "UK3CB_O_G_Hilux_Vulcan_Front", "UK3CB_O_G_Hilux_Zu23_Front", "UK3CB_O_G_LandRover_Opentop_Igla_Chair", "UK3CB_O_G_LandRover_Opentop_AGS30", "UK3CB_O_G_LandRover_Opentop_DSHKM", "UK3CB_O_G_LandRover_Opentop_M2", "UK3CB_O_G_LandRover_Opentop_M240", "UK3CB_O_G_LandRover_Opentop_METIS", "UK3CB_O_G_LandRover_Opentop_MG3", "UK3CB_O_G_LandRover_Opentop_MK19", "UK3CB_O_G_LandRover_Opentop_PKM", "UK3CB_O_G_LandRover_Opentop_SPG9", "UK3CB_O_G_LandRover_Opentop_TOW", "UK3CB_O_G_LandRover_SF_WMIK_AGS30_PKM", "UK3CB_O_G_LandRover_SF_WMIK_DSHKM_PKM", "UK3CB_O_G_LandRover_SF_WMIK_M2_M240", "UK3CB_O_G_LandRover_SF_WMIK_M2_PKM", "UK3CB_O_G_LandRover_SF_WMIK_M240_M240", "UK3CB_O_G_LandRover_SF_WMIK_METIS_PKM", "UK3CB_O_G_LandRover_SF_WMIK_METIS_PKM", "UK3CB_O_G_LandRover_SF_WMIK_MILAN_M240", "UK3CB_O_G_LandRover_SF_WMIK_MK19_M240", "UK3CB_O_G_LandRover_SF_WMIK_PKM_PKM", "UK3CB_O_G_LandRover_WMIK_AGS30", "UK3CB_O_G_LandRover_WMIK_DSHKM", "UK3CB_O_G_LandRover_WMIK_M2", "UK3CB_O_G_LandRover_WMIK_M240", "UK3CB_O_G_LandRover_WMIK_MG3", "UK3CB_O_G_LandRover_WMIK_MK19", "UK3CB_O_G_LandRover_WMIK_PKM", "UK3CB_O_G_Pickup_Igla_Chair", "UK3CB_O_G_Pickup_rocket_arty", "UK3CB_O_G_Pickup_DSHKM", "UK3CB_O_G_Pickup_GMG", "UK3CB_O_G_Pickup_M2", "UK3CB_O_G_Pickup_Metis", "UK3CB_O_G_Pickup_Rocket", "UK3CB_O_G_Pickup_SPG9", "UK3CB_O_G_Pickup_TOW", "UK3CB_O_G_Pickup_ZU23_Front", "UK3CB_O_G_V3S_Zu23", "UK3CB_O_G_UAZ_AGS30", "UK3CB_O_G_UAZ_Dshkm", "UK3CB_O_G_UAZ_SPG9"]] call _fnc_saveToTemplate;
 ["vehiclesRivalsTrucks", ["UK3CB_O_G_Ural_Open", "UK3CB_O_G_Ural_Closed", "UK3CB_O_G_V3S_Open", "UK3CB_O_G_V3S_Closed"]] call _fnc_saveToTemplate;
 ["vehiclesRivalsCars", ["UK3CB_O_G_Datsun_Pickup", "UK3CB_O_G_Hilux_Closed", "UK3CB_O_G_Hilux_Open", "UK3CB_O_G_LandRover_Softtop_Transport_Closed",
-["UK3CB_O_G_LandRover_Softtop_Transport_Closed", "UK3CB_O_G_Pickup", "UK3CB_O_G_UAZ_Closed", "UK3CB_O_G_UAZ_Open"]] call _fnc_saveToTemplate;
+"UK3CB_O_G_LandRover_Softtop_Transport_Closed", "UK3CB_O_G_Pickup", "UK3CB_O_G_UAZ_Closed", "UK3CB_O_G_UAZ_Open"]] call _fnc_saveToTemplate;
 ["vehiclesRivalsAPCs", ["UK3CB_O_G_BTR40", "UK3CB_O_G_BTR40_DSHKMS", "UK3CB_O_G_BTR40_GMG", "UK3CB_O_G_BTR40_METIS", "UK3CB_O_G_BTR40_MG", "UK3CB_O_G_BTR40_PKM", "UK3CB_O_G_BTR40_ZU23", "UK3CB_O_G_Hilux_BMP", "UK3CB_O_G_Hilux_BTR", "UK3CB_O_G_BTR60", "UK3CB_O_G_MTLB_PKT", "UK3CB_O_G_MTLB_Zu23"]] call _fnc_saveToTemplate;
 ["vehiclesRivalsTanks", ["UK3CB_O_G_T34"]] call _fnc_saveToTemplate;
 ["vehiclesRivalsHelis", ["UK3CB_O_G_UH1H_M240_FIA", "UK3CB_O_G_UH1H_GUNSHIP_FIA", "UK3CB_O_G_UH1H_FIA"]] call _fnc_saveToTemplate;
@@ -66,8 +67,6 @@ private _faces = [
 
 ["minefieldAT", ["rhs_mine_TM43", "rhs_mine_M7A2"]] call _fnc_saveToTemplate;
 ["minefieldAPERS", ["rhs_mine_a200_bz", "rhs_mine_a200_dz35", "rhs_mine_glasmine43_bz", "rhs_mine_glasmine43_hz", "rhs_mine_m2a3b_press", "rhs_mine_m3_pressure", "rhs_mine_mk2_pressure", "rhs_mine_smine35_press", "rhs_mine_smine44_press"]] call _fnc_saveToTemplate;
-]] call _fnc_saveToTemplate;
-
 //////////////////////////
 //       Loadouts       //
 //////////////////////////
@@ -100,32 +99,74 @@ _loadoutData set ["facewear", [
 	"G_Bandanna_beast",
 	"G_Bandanna_sport",
 	"G_Bandanna_shades",
-	"rhs_scarf"
+	"UK3CB_G_Bandanna_aviator_brown_check",
+	"UK3CB_G_Bandanna_aviator_green_check",
+	"UK3CB_G_Bandanna_brown_check",
+	"UK3CB_G_Bandanna_green_check",
+	"UK3CB_G_Bandanna_shades_brown_check",
+	"UK3CB_G_Bandanna_shades_green_check",
+	"UK3CB_G_Bandanna_sport_brown_check",
+	"UK3CB_G_Bandanna_sport_green_check",
+	"G_Bandanna_tan",
+	"G_Bandanna_sport",
+	"G_Bandanna_oli",
+	"G_Bandanna_khk"
 ]];
 _loadoutData set ["fullmask", [	
-	"rhs_balaclava", 
-	"G_Balaclava_blk", 
+	"UK3CB_G_Balaclava", 
+	"UK3CB_G_Balaclava_DES", 
 	"UK3CB_G_Balaclava2_BLK",
 	"UK3CB_G_Balaclava2_DES",
-	"rhssaf_veil_Green",
-	"UK3CB_G_Balaclava",
-	"UK3CB_G_Bandanna_aviator_flora_alt",
-	"UK3CB_G_Balaclava_DES"
+	"G_Balaclava_blk",
+	"G_Balaclava_combat",
+	"G_Balaclava_lowprofile",
+	"G_Balaclava_oli",
+	"G_Balaclava_Skull1",
+	"rhs_balaclava",
+	"rhs_balaclava1_olive",
+	"rhssaf_veil_Green"
 ]];
 
 _loadoutData set ["headgear", [
-    "UK3CB_H_Woolhat_CBR",
-    "UK3CB_H_Woolhat_KHK",
-	"UK3CB_H_BoonieHat_DPM_Arid"
-	"UK3CB_H_BoonieHat_GRK_LIZ",
-	"UK3CB_H_BoonieHat_RHB",
-	"UK3CB_H_BoonieHat_TRK",
-    "UK3CB_TNM_B_H_Cap_KHK",
-    "H_Cap_oli",
-	"UK3CB_H_Cap_VEG",
-	"UK3CB_H_Cap_WDL_03",
-	"UK3CB_H_Bandanna_DPM_SA",
-	"rhssaf_bandana_smb"
+    "UK3CB_H_Bandanna_DPM_68",
+    "UK3CB_H_Bandanna_DPM_85",
+    "UK3CB_H_Bandanna_DPM_95",
+    "UK3CB_H_Bandanna_DPM_ARID",
+    "UK3CB_H_Bandanna_DPM_SA",
+    "UK3CB_H_BoonieHat_DPM_68",
+    "UK3CB_H_BoonieHat_DPM_85",
+    "UK3CB_H_BoonieHat_DPM_95",
+    "UK3CB_H_BoonieHat_DPM_Arid",
+    "UK3CB_H_BoonieHat_DPM_SA",
+    "UK3CB_H_Cap_DPM_68",
+    "UK3CB_H_Cap_DPM_85",
+    "UK3CB_H_Cap_DPM_95",
+    "UK3CB_H_Cap_DPM_Arid",
+    "UK3CB_H_Cap_DPM_SA",
+    "UK3CB_H_Bandanna_WDL_01",
+    "UK3CB_H_Bandanna_WDL_02",
+    "UK3CB_H_Bandanna_WDL_03",
+    "UK3CB_H_BoonieHat_WDL_01",
+    "UK3CB_H_BoonieHat_WDL_02",
+    "UK3CB_H_BoonieHat_WDL_03",
+    "UK3CB_H_Cap_WDL_01",
+    "UK3CB_H_Cap_WDL_02",
+    "UK3CB_H_Cap_WDL_03",
+    "H_Booniehat_wdl",
+    "UK3CB_H_Bandanna_RHB",
+    "UK3CB_H_BoonieHat_RHB",
+    "UK3CB_H_Cap_RHB",
+    "UK3CB_H_MilCap_RHB",
+    "UK3CB_TKA_I_H_Shemag_Des",
+    "UK3CB_H_Shemag_blk",
+    "UK3CB_H_Shemag_grey",
+    "UK3CB_H_Shemag_oli",
+    "UK3CB_H_Shemag_tan",
+    "UK3CB_H_Shemag_white",
+    "H_Shemag_olive",
+    "H_ShemagOpen_tan",
+    "H_ShemagOpen_khk",
+	"UK3CB_CHC_C_H_Can_Cap"
 ]];
 
 _loadoutData set ["maps", ["ItemMap"]];
@@ -138,14 +179,65 @@ _loadoutData set ["binoculars", ["rhssaf_zrak_rd7j"]];
 _loadoutData set ["Rangefinder", ["rhs_pdu4"]];
 
 _loadoutData set ["uniforms", [
+	"UK3CB_MEI_B_U_Pants_01",
+	"UK3CB_MEI_B_U_Pants_02",
+	"UK3CB_MEI_B_U_Pants_03",
+	"UK3CB_MEI_B_U_Pants_06",
+	"UK3CB_MEI_B_U_Pants_07",
+	"UK3CB_MEI_B_U_Pants_08",
+	"UK3CB_MEI_B_U_Pants_09",
+	"UK3CB_MEI_B_U_Pants_10",
+	"UK3CB_MEI_B_U_Pants_11",
+	"UK3CB_MEI_B_U_Jeans_Tshirt_06",
+	"UK3CB_MEI_B_U_Jeans_Tshirt_17",
+	"UK3CB_MEI_B_U_Jeans_Tshirt_07",
+	"UK3CB_MEI_B_U_Jeans_Tshirt_18",
+	"UK3CB_MEI_B_U_Jeans_Tshirt_01",
+	"UK3CB_MEI_B_U_Jeans_Tshirt_12",
+	"UK3CB_MEI_B_U_Jeans_Tshirt_02",
+	"UK3CB_MEI_B_U_Jeans_Tshirt_13",
+	"UK3CB_MEI_B_U_Jeans_Tshirt_14",
+	"UK3CB_MEI_B_U_Jeans_Tshirt_03",
+	"UK3CB_MEI_B_U_Jeans_Tshirt_09",
+	"UK3CB_MEI_B_U_Jeans_Tshirt_20",
+	"UK3CB_MEI_B_U_Jeans_Tshirt_10",
+	"UK3CB_MEI_B_U_Jeans_Tshirt_21",
+	"UK3CB_MEI_B_U_Jeans_Tshirt_11",
+	"`UK3CB_MEI_B_U_Jeans_Tshirt_22`",
+	"UK3CB_WEI_B_U_Infantry_Shirt_Uniform_01",
+	"UK3CB_WEI_B_U_Infantry_Shirt_Uniform_02",
+	"UK3CB_WEI_B_U_Infantry_Shirt_Uniform_03",
+	"UK3CB_WEI_B_U_Infantry_Shirt_Uniform_04",
+	"UK3CB_WEI_B_U_CombatSmock_01",
+	"UK3CB_WEI_B_U_CombatSmock_29",
+	"UK3CB_WEI_B_U_CombatSmock_07",
+	"UK3CB_WEI_B_U_CombatSmock_02",
+	"UK3CB_WEI_B_U_CombatSmock_31",
+	"UK3CB_WEI_B_U_CombatSmock_05",
+	"UK3CB_WEI_B_U_CombatSmock_03",
+	"UK3CB_WEI_B_U_CombatSmock_32",
+	"UK3CB_WEI_B_U_CombatSmock_16",
+	"UK3CB_WEI_B_U_CombatSmock_15",
+	"UK3CB_WEI_B_U_CombatSmock_14",
+	"UK3CB_WEI_B_U_CombatSmock_04",
+	"UK3CB_WEI_B_U_CombatSmock_26",
+	"UK3CB_WEI_B_U_CombatSmock_17",
+	"UK3CB_WEI_B_U_CombatSmock_27",
+	"UK3CB_WEI_B_U_CombatSmock_18",
+	"UK3CB_WEI_B_U_CombatSmock_28",
+	"UK3CB_WEI_B_U_CombatSmock_19"
+
+]];
+
+_loadoutData set ["offuniforms", [
 	"UK3CB_WEI_B_U_CombatUniform_01",
 	"UK3CB_WEI_B_U_CombatUniform_04",
 	"UK3CB_WEI_B_U_CombatUniform_02",
 	"UK3CB_WEI_B_U_CombatUniform_05",
 	"UK3CB_WEI_B_U_CombatUniform_03",
 	"UK3CB_WEI_B_U_CombatUniform_06",
-	"UK3CB_WEI_B_U_CombatSmock_29",
-	"UK3CB_WEI_B_U_CombatSmock_07",
+	"UK3CB_MEI_B_U_CombatUniform_WDL_01_JEANS_RED",
+	"UK3CB_MEI_B_U_CombatUniform_WDL_01_JEANS_WHITE",
 	"UK3CB_MEI_B_U_CombatUniform_WDL_01_JEANS_RED",
 	"UK3CB_MEI_B_U_CombatUniform_WDL_01_JEANS_WHITE",
 	"UK3CB_MEI_B_U_CombatUniform_WDL_02_JEANS_RED",
@@ -157,20 +249,68 @@ _loadoutData set ["uniforms", [
 	"UK3CB_MEI_B_U_CombatUniform_WDL_02_BROWN_RED",
 	"UK3CB_MEI_B_U_CombatUniform_WDL_02_BROWN_WHITE",
 	"UK3CB_MEI_B_U_CombatUniform_WDL_03_BROWN_RED",
-	"UK3CB_MEI_B_U_CombatUniform_WDL_03_BROWN_WHITE",
-	"UK3CB_WEI_B_U_CombatSmock_07",
-	"UK3CB_WEI_B_U_CombatSmock_06",
-	"UK3CB_WEI_B_U_Infantry_Shirt_Uniform_01",
-	"UK3CB_WEI_B_U_Infantry_Shirt_Uniform_02",
-	"UK3CB_WEI_B_U_Infantry_Shirt_Uniform_03",
-	"UK3CB_WEI_B_U_Infantry_Shirt_Uniform_04"
+	"UK3CB_MEI_B_U_CombatUniform_WDL_03_BROWN_WHITE"
 ]];
-
-_loadoutData set ["offuniforms", ["UK3CB_B_U_Officer_WDL", "UK3CB_FIA_B_U_M10_CombatUniform_GRK_LIZ01_01", "UK3CB_FIA_B_U_M10_CombatUniform_TRK01_01", "UK3CB_FIA_B_U_M10_CombatUniform_DPM02_01"]];
-_loadoutData set ["vests", ["UK3CB_V_Chestrig_ERDL", "UK3CB_V_Chestrig_OLI", "UK3CB_V_Chestrig_Tan", "UK3CB_V_Chestrig_WDL_02", "UK3CB_V_Chestrig_WDL_01"]];
-_loadoutData set ["heavyVests", ["UK3CB_ADA_B_V_TacVest_DPM", "UK3CB_MDF_B_V_TacVest_LIZ", "UK3CB_ADA_B_V_TacVest_WDL"]];
-_loadoutData set ["atBackpacks", ["UK3CB_B_Alice_pack_01", "UK3CB_B_Alice_pack_02", "UK3CB_B_Alice_pack_03", "UK3CB_B_Alice_pack_04"]];
-_loadoutData set ["backpacks", ["UK3CB_B_Carryall_DPM_ARID", "UK3CB_B_Carryall_DPM_SA", "UK3CB_B_Kitbag_DPM_ARID", "UK3CB_B_Kitbag_DPM_SA", "UK3CB_B_Carryall_RHB", "UK3CB_B_Kitbag_RHB", "UK3CB_B_Carryall_GRK_LIZ", "UK3CB_B_Carryall_TRK"]];
+_loadoutData set ["vests", ["UK3CB_V_SOV_CHICOM_TAN", "UK3CB_V_Chestrig_OLI", "UK3CB_V_Chestrig_Tan", "UK3CB_V_Chestrig_WDL_02", "UK3CB_V_Chestrig_WDL_01", "UK3CB_V_SOV_CHICOM_GRN", "UK3CB_V_SOV_CHICOM_TAN_GRN", "UK3CB_V_SOV_CHICOM_GRN_TAN", "rhs_lifchik", "rhs_lifchik_light", "rhs_chicom", "rhs_chicom_khk", "V_Chestrig_blk", "V_Chestrig_rgr", "V_Chestrig_khk", "V_Chestrig_oli", "V_TacChestrig_cbr_F", "V_TacChestrig_grn_F", "V_TacChestrig_oli_F", "rhsgref_chestrig"]];
+_loadoutData set ["heavyVests", ["UK3CB_ADA_B_V_TacVest_DPM", "UK3CB_MDF_B_V_TacVest_LIZ", "UK3CB_ADA_B_V_TacVest_WDL", "V_TacVest_blk", "V_TacVest_brn", "UK3CB_ADA_B_V_TacVest_KHK", "UK3CB_TKA_B_V_TacVest_Tan", "V_TacVest_camo", "V_TacVest_khk", "V_TacVest_oli"]];
+_loadoutData set ["atBackpacks", [
+	"UK3CB_B_Carryall_DPM_68",
+	"UK3CB_B_Carryall_DPM_85",
+	"UK3CB_B_Carryall_DPM_ARID",
+	"UK3CB_B_Carryall_DPM_SA",
+	"UK3CB_TNM_B_B_CARRYALL_BLK",
+	"UK3CB_PLM_B_B_CARRYALL_GRN",
+	"UK3CB_LSM_B_B_CARRYALL_KHK",
+	"UK3CB_TNM_B_B_CARRYALL_KHK",
+	"UK3CB_LSM_B_B_CARRYALL_OLI",
+	"UK3CB_B_Carryall_RHB",
+	"UK3CB_LNM_B_B_CARRYALL_WDL_01",
+	"UK3CB_LNM_B_B_CARRYALL_WDL_02",
+	"UK3CB_LNM_B_B_CARRYALL_WDL_03",
+	"UK3CB_LSM_B_B_CARRYALL_WDL_01",
+	"UK3CB_B_Carryall_WDL_01",
+	"UK3CB_B_Carryall_WDL_02",
+	"UK3CB_B_Carryall_WDL_03",
+	"UK3CB_PLM_B_B_CARRYALL_WDL",
+	"B_Carryall_blk",
+	"B_Carryall_cbr",
+	"B_Carryall_khk",
+	"B_Carryall_oli",
+	"B_Carryall_green_F",
+	"B_Carryall_wdl_F",
+	"UK3CB_TNM_B_B_RPG"
+	]];
+_loadoutData set ["backpacks", [
+	"UK3CB_B_AssaultPack_DPM_68",
+	"UK3CB_B_AssaultPack_DPM_85",
+	"UK3CB_B_AssaultPack_DPM_ARID",
+	"UK3CB_B_AssaultPack_DPM_SA",
+	"UK3CB_B_Kitbag_DPM_68",
+	"UK3CB_B_Kitbag_DPM_85",
+	"UK3CB_B_Kitbag_DPM_ARID",
+	"UK3CB_B_Kitbag_DPM_SA",
+	"UK3CB_B_AssaultPack_RHB",
+	"UK3CB_B_Kitbag_RHB",
+	"UK3CB_B_AssaultPack_WDL_01",
+	"UK3CB_B_AssaultPack_WDL_02",
+	"UK3CB_B_AssaultPack_WDL_03",
+	"UK3CB_B_Kitbag_WDL_01",
+	"UK3CB_B_Kitbag_WDL_02",
+	"UK3CB_B_Kitbag_WDL_03",
+	"B_AssaultPack_wdl_F",
+	"B_AssaultPack_blk",
+	"B_AssaultPack_cbr",
+	"B_AssaultPack_rgr",
+	"B_AssaultPack_khk",
+	"B_AssaultPack_sgg",
+	"UK3CB_TNM_B_B_RIF_BLK_01",
+	"UK3CB_TNM_B_B_RIF_01",
+	"B_Kitbag_cbr",
+	"B_Kitbag_rgr",
+	"B_Kitbag_sgg",
+	"B_Kitbag_tan",
+	"rhssaf_kitbag_smb"
+	]];
 _loadoutData set ["helmets", ["UK3CB_H_HSAT_MKIII", "UK3CB_H_HSAT_PTYPE", "UK3CB_H_MKIV_Helmet", "UK3CB_H_MKIV_Net_Helmet", "UK3CB_H_M1_Helmet", "UK3CB_H_M1_Helmet_Covered", "UK3CB_H_M1_Helmet_Covered_OLI", "UK3CB_H_M1_Helmet_Covered_TAN", "UK3CB_H_M1_Helmet_Net_OLI", "UK3CB_H_M1_Helmet_Net_TAN", "rhsgref_helmet_m1940", "rhsgref_helmet_m1940_camo01", "rhsgref_helmet_m1942", "rhsgref_helmet_m1942_camo01", "rhsgref_M56"]];
 
 //Item *set* definitions. These are added in their entirety to unit loadouts. No randomisation is applied.

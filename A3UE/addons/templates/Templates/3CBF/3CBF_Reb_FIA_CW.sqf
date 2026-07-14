@@ -1,22 +1,18 @@
-private _hasLawsOfWar = "orange" in A3A_enabledDLC;
-
 ///////////////////////////
 //   Rebel Information   //
 ///////////////////////////
 
 ["name", "FIA"] call _fnc_saveToTemplate;
 
-["flag", "Flag_FIA_F"] call _fnc_saveToTemplate;
-["flagTexture", "a3\data_f\flags\flag_fia_co.paa"] call _fnc_saveToTemplate;
-["flagMarkerType", "flag_FIA"] call _fnc_saveToTemplate;
-
-
-["vehiclesBasic", ["UK3CB_NFA_I_YAVA"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["UK3CB_NFA_I_Datsun_Open"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed", ["UK3CB_NFA_I_Hilux_M2"]] call _fnc_saveToTemplate;
-["vehiclesTruck", ["UK3CB_NFA_I_V3S_Open"]] call _fnc_saveToTemplate;
-["vehiclesAT", ["UK3CB_NFA_I_Hilux_Spg9"]] call _fnc_saveToTemplate;
-["vehiclesAA", ["UK3CB_NFA_I_Hilux_Zu23"]] call _fnc_saveToTemplate;
+["flag", "Flag_NFA"] call _fnc_saveToTemplate;
+["flagTexture", "\UK3CB_Factions\addons\UK3CB_Factions_NFA\Flag\NFA_flag_marker_co.paa"] call _fnc_saveToTemplate;
+["flagMarkerType", "UK3CB_Marker_NFA"] call _fnc_saveToTemplate;
+["vehiclesBasic", ["UK3CB_NFA_I_YAVA", "UK3CB_NFA_I_TT650"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["UK3CB_NFA_I_Datsun_Open", "UK3CB_NFA_I_Hilux_Closed", "UK3CB_NFA_I_Hilux_Open", "UK3CB_NFA_I_UAZ_Closed", "UK3CB_NFA_I_UAZ_Closed"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["UK3CB_NFA_I_Hilux_PKM", "UK3CB_NFA_I_Datsun_Pkm", "UK3CB_NFA_I_UAZ_MG"]] call _fnc_saveToTemplate;
+["vehiclesTruck", ["UK3CB_NFA_I_V3S_Open", "UK3CB_NFA_I_Zil131_Open", "UK3CB_NFA_I_Zil131_Covered", "UK3CB_NFA_I_Ural_Open", "UK3CB_NFA_I_Ural", "UK3CB_NFA_I_V3S_Closed"]] call _fnc_saveToTemplate;
+["vehiclesAT", ["UK3CB_NFA_I_Hilux_Spg9", "UK3CB_NFA_I_UAZ_SPG9"]] call _fnc_saveToTemplate;
+["vehiclesAA", ["UK3CB_NFA_I_Hilux_Zu23", "UK3CB_NFA_I_Hilux_Zu23_Front"]] call _fnc_saveToTemplate;
 
 ["vehiclesBoat", ["UK3CB_NFA_I_Small_Boat_Wood"]] call _fnc_saveToTemplate;
 
@@ -27,7 +23,7 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ["vehiclesCivHeli", ["UK3CB_C_Mi8AMT"]] call _fnc_saveToTemplate;
 ["vehiclesCivBoat", ["UK3CB_C_Small_Boat_Wood"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["UK3CB_FIA_I_M2_TriPod"]] call _fnc_saveToTemplate;
+["staticMGs", ["UK3CB_NFA_I_PKM_High", "UK3CB_NFA_I_PKM_Low"]] call _fnc_saveToTemplate;
 ["staticAT", ["UK3CB_NFA_I_SPG9"]] call _fnc_saveToTemplate;
 ["staticAA", ["UK3CB_NFA_I_ZU23"]] call _fnc_saveToTemplate;
 ["staticMortars", ["UK3CB_nfa_i_2b14_82mm"]] call _fnc_saveToTemplate;
@@ -39,7 +35,6 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 	"rhs_mine_tm62m_mag",
 	"rhs_mine_M19_mag",
 	"rhs_mag_mine_ptm1",
-	"SLAMDirectionalMine_Wire_Mag",
 	"rhssaf_mine_tma4_mag",
 	"rhs_mine_TM43_mag"
 ]] call _fnc_saveToTemplate;
@@ -50,7 +45,6 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 	"APERSBoundingMine_Range_Mag",
 	"rhs_mag_mine_pfm1",
 	"rhsusf_mine_m14_mag",
-	"ClaymoreDirectionalMine_Remote_Mag",
 	"APERSTripMine_Wire_Mag",
 	"rhssaf_tm100_mag",
 	"rhssaf_tm200_mag",
@@ -88,8 +82,10 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 //////////////////////////////////////
 
 ["variants", [
-    ["RHSGREF_A29B_HIDF", ["Brazil",1]],
-    ["RHSGREF_A29B_HIDF", ["MIG",1]]
+    ["UK3CB_I_G_Antonov_An2", ["WDL",1]],
+    ["UK3CB_I_G_Antonov_An2", ["GREEN",1]],
+    ["UK3CB_I_G_Antonov_An2", ["OLIVE",1]]
+    
 ]] call _fnc_saveToTemplate;
 
 #include "3CBF_Reb_Vehicle_Attributes.sqf"
@@ -99,11 +95,11 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ///////////////////////////
 
 private _initialRebelEquipment = [
-    ["rhsusf_weap_m1911a1", 3], ["rhsusf_mag_7x45acp_MHP", 6]
-    "UK3CB_M1903A1", "UK3CB_M1903A1_3006_5rnd_Magazine", "UK3CB_M1903A1_3006_5rnd_Magazine_RT",
-    ["uk3cb_m1_advisor_carbine", 3], ["UK3CB_M1_15Rnd_30Carbine_Magazine_R", 6],
+    "rhs_weap_makarov_pm", "rhs_mag_9x18_8_57N181S",
+    "rhs_weap_m38", "rhsgref_5Rnd_762x54_m38",
+    ["uk3cb_m1_advisor_carbine", 1], ["UK3CB_M1_15Rnd_30Carbine_Magazine_R", 2],
     "rhs_weap_Izh18", "rhsgref_1Rnd_00Buck", "rhsgref_1Rnd_Slug",
-    "rhs_grenade_anm8_mag", "rhs_grenade_mki_mag", "rhs_grenade_mkii_mag",
+    "rhs_grenade_anm8_mag", "rhs_grenade_mki_mag", ["rhs_grenade_mkii_mag", 5], ["rhs_mag_f1", 5]
     ["rhs_weap_panzerfaust60", 3],
     ["IEDUrbanSmall_Remote_Mag", 3], ["IEDLandSmall_Remote_Mag", 3], ["IEDUrbanBig_Remote_Mag", 1], ["IEDLandBig_Remote_Mag", 1],
     "B_FieldPack_oli",
@@ -112,8 +108,8 @@ private _initialRebelEquipment = [
     "rhs_weap_rsp30_green","rhs_mag_rsp30_green",
     "rhs_weap_rsp30_red", "rhs_mag_rsp30_red",
     "rhs_mag_nspd", "rhs_mag_nspn_yellow", "rhs_mag_nspn_green", "rhs_mag_nspn_red",
-    "rhsgref_chicom","V_BandollierB_oli",
-    "UK3CB_CHC_C_B_MED", "B_AssaultPack_blk"
+    "rhsgref_chicom","UK3CB_V_Chicom_Desert",
+    "rhs_medic_bag", "B_AssaultPack_khk"
 ];
 
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};
@@ -125,78 +121,188 @@ if (A3A_hasACE) then {_initialRebelEquipment append ["ACE_Flashlight_Maglite_ML3
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
 private _rebUniforms = [
-    "U_IG_Guerilla2_1",
-    "U_IG_Guerilla2_2",
-    "U_IG_Guerilla2_3",
-    "U_IG_Guerrilla_6_1",
-    "U_I_G_resistanceLeader_F",
-    "U_I_L_Uniform_01_deserter_F",
-    "rhsgref_uniform_3color_desert",
+    "UK3CB_NFA_B_U_Officer_Uniform_ALP",
+    "UK3CB_NFA_B_U_Officer_Uniform_FLK",
+    "UK3CB_FIA_B_U_M10_CombatUniform_DPM01_02",
+    "UK3CB_FIA_B_U_M10_CombatUniform_DPM01_01",
+    "UK3CB_FIA_B_U_M10_CombatUniform_DPM02_02",
+    "UK3CB_FIA_B_U_M10_CombatUniform_DPM02_01",
+    "UK3CB_FIA_B_U_M10_CombatUniform_TRK01_02",
+    "UK3CB_FIA_B_U_M10_CombatUniform_TRK01_01",
+    "UK3CB_FIA_B_U_M10_CombatUniform_MAR01_02",
+    "UK3CB_FIA_B_U_M10_CombatUniform_VEG01_02",
+    "UK3CB_FIA_B_U_M10_CombatUniform_VEG01_01",
+    "UK3CB_FIA_B_U_M10_CombatUniform_WDL01_01",
+    "UK3CB_FIA_B_U_M10_CombatUniform_WDL01_02",
+    "UK3CB_FIA_B_U_M10_CombatUniform_WDL02_02",
+    "UK3CB_FIA_B_U_M10_CombatUniform_WDL02_01",
+    "UK3CB_ADM_B_U_Shirt_Pants_01_BLU_WDL_ALT",
+    "UK3CB_ADM_B_U_Shirt_Pants_01_BLU_WDL",
+    "UK3CB_ADM_B_U_Shirt_Pants_01_BRN_WDL_ALT",
+    "UK3CB_ADM_B_U_Shirt_Pants_01_GRN_WDL_ALT",
+    "UK3CB_ADM_B_U_Shirt_Pants_01_GRN_WDL",
+    "UK3CB_ADM_B_U_Tshirt_01_DPM",
+    "UK3CB_ADM_B_U_Tshirt_01_TCC",
+    "UK3CB_ADM_B_U_Tshirt_01_WDL",
+    "UK3CB_ADM_B_U_Tshirt_01_WDL_03",
+    "rhsgref_uniform_alpenflage",
+    "rhsgref_uniform_gorka_1_f",
+    "rhsgref_uniform_altis_lizard",
+    "rhsgref_uniform_altis_lizard_olive",
     "rhsgref_uniform_dpm",
     "rhsgref_uniform_dpm_olive",
+    "rhsgref_uniform_ERDL",
+    "rhsgref_uniform_flecktarn",
+    "rhsgref_uniform_flecktarn_full",
     "rhsgref_uniform_og107",
     "rhsgref_uniform_og107_erdl",
-    "rhsgref_uniform_tigerstripe",
+    "rhsgref_uniform_olive",
     "rhsgref_uniform_woodland",
-    "rhsgref_uniform_woodland_olive",
-    "UK3CB_CHD_I_U_CombatSmock_09",
-    "UK3CB_CHD_I_U_CombatSmock_12",
-    "UK3CB_CHD_I_U_CombatUniform_08",
-    "UK3CB_LNM_I_U_CombatSmock_21",
-    "UK3CB_LSM_I_U_CombatSmock_05",
-    "UK3CB_LSM_I_U_CombatSmock_04",
-    "UK3CB_LSM_I_U_CombatSmock_11",
-    "UK3CB_LSM_I_U_CombatSmock_10",
-    "UK3CB_LSM_I_U_Crew_CombatSmock_12",
-    "UK3CB_LSM_I_U_CombatSmock_27",
-    "UK3CB_LSM_I_U_CombatSmock_29",
-    "UK3CB_LSM_I_U_CombatSmock_25",
-    "UK3CB_LSM_I_U_CombatUniform_07",
-    "UK3CB_LSM_I_U_CombatUniform_09",
-    "UK3CB_LNM_I_U_CombatUniform_15",
-    "UK3CB_LSM_I_U_CombatUniform_06",
-    "UK3CB_LSM_I_U_CombatUniform_02",
-    "UK3CB_LSM_I_U_CombatUniform_03",
-    "UK3CB_LSM_I_U_CombatUniform_01"
+    "rhsgref_uniform_woodland_olive"
 ];
 
 ["uniforms", _rebUniforms] call _fnc_saveToTemplate;
 
-["headgear", [
-    "rhs_beanie_green",
-    "H_Bandanna_khk",
-    "H_Cap_blk",
-    "H_Cap_oli",
-    "H_Cap_headphones",
-    "rhs_headband",
-    "UK3CB_LNM_B_H_BoonieHat_FLK_01",
-    "UK3CB_LNM_B_H_BoonieHat_FLK_02",
-    "UK3CB_LNM_B_H_BoonieHat_FLK_03",
+private _headgear = [
+  "UK3CB_NFA_B_H_BoonieHat_FLK",
+  "UK3CB_NFA_B_H_M88_Field_Cap_ALP",
+  "UK3CB_NFA_B_H_M88_Field_Cap_FLK",
+  "UK3CB_TNM_B_H_Cap_KHK",    
+  "UK3CB_LSM_B_H_M88_Field_Cap_BLK",
+  "UK3CB_LSM_B_H_M88_Field_Cap_KHK",
+  "UK3CB_LSM_B_H_M88_Field_Cap_OLI",    
+  "UK3CB_ANP_B_H_Patrolcap_BLU",
+  "rhs_cossack_visor_cap_tan",
+  "rhs_cossack_visor_cap",
+  "rhs_fieldcap_m88",
+  "rhs_fieldcap_m88_back",
+  "rhs_fieldcap_m88_grey",
+  "rhs_fieldcap_m88_grey_back",
+  "rhs_fieldcap_early",
+  "rhs_fieldcap_khk",
+  "rhsgref_hat_m1941cap"
+  "H_Cap_oli",
+  "H_Cap_surfer",
+  "H_Cap_tan",
+  "H_Cap_oli_hs",
+  "H_Cap_blk",
+  "H_Hat_blue",
+  "H_Hat_brown",
+  "H_Hat_camo",
+  "H_Hat_checker",
+  "H_Hat_grey",
+  "H_Hat_tan",
+  "H_Cap_marshal",
+  "H_MilCap_blue",
+  "H_MilCap_gry",
+  "H_ShemagOpen_tan",
+  "H_ShemagOpen_khk",
+  "H_ShemagOpen_tan",
+  "H_Shemag_olive_hs",
+  "H_StrawHat",
+  "H_StrawHat_dark",
+  "rhsgref_Booniehat_alpen",
+  "rhs_cossack_papakha"
+];
 
-]] call _fnc_saveToTemplate;
+private _dlcheadgear = [
+    "UK3CB_FIA_B_H_Off_Beret"
+];
+
+["headgear", _headgear + _dlcheadgear] call _fnc_saveToTemplate;
 
 /////////////////////
 ///  Identities   ///
 /////////////////////
 
 ["faces", [
-    "GreekHead_A3_02",
+    "GreekHead_A3_01",
+    "PersianHead_A3_01",
+    "WhiteHead_01",
+    "WhiteHead_02",
+    "WhiteHead_18",
+    "WhiteHead_05",
+    "GreekHead_A3_07",
+    "WhiteHead_03",
+    "WhiteHead_04",
     "GreekHead_A3_03",
     "GreekHead_A3_04",
+    "WhiteHead_06",
+    "WhiteHead_07",
     "GreekHead_A3_05",
     "GreekHead_A3_06",
-    "GreekHead_A3_07",
+    "WhiteHead_08",
+    "AfricanHead_02",
+    "PersianHead_A3_02",
+    "AsianHead_A3_02",
+    "AfricanHead_03",
+    "WhiteHead_09",
     "GreekHead_A3_08",
+    "WhiteHead_16",
+    "WhiteHead_11",
+    "WhiteHead_10",
+    "WhiteHead_19",
+    "WhiteHead_17",
+    "WhiteHead_21",
+    "WhiteHead_12",
+    "PersianHead_A3_03",
+    "WhiteHead_13",
     "GreekHead_A3_09",
-    "GreekHead_A3_11",
-    "GreekHead_A3_12",
+    "WhiteHead_14",
+    "WhiteHead_15",
+    "AsianHead_A3_03",
+    "WhiteHead_20",
+    "AfricanHead_01",
+    "AsianHead_A3_01",
+    "TanoanHead_A3_02",
+    "TanoanHead_A3_03",
+    "AsianHead_A3_05",
+    "TanoanHead_A3_04",
+    "AsianHead_A3_04",
+    "TanoanHead_A3_05",
+    "TanoanHead_A3_07",
+    "TanoanHead_A3_09",
+    "TanoanHead_A3_01",
+    "TanoanHead_A3_06",
+    "TanoanHead_A3_08",
+    "AsianHead_A3_07",
+    "AsianHead_A3_06",
+    "WhiteHead_24",
+    "RussianHead_4",
+    "LivonianHead_5",
+    "WhiteHead_25",
+    "LivonianHead_2",
+    "WhiteHead_26",
+    "RussianHead_1",
+    "LivonianHead_7",
+    "LivonianHead_6",
+    "WhiteHead_27",
+    "WhiteHead_28",
+    "LivonianHead_3",
+    "RussianHead_3",
+    "LivonianHead_1",
+    "RussianHead_2",
+    "LivonianHead_10",
+    "WhiteHead_32",
+    "WhiteHead_29",
+    "WhiteHead_30",
+    "LivonianHead_8",
+    "LivonianHead_4",
+    "WhiteHead_31",
+    "RussianHead_5",
+    "LivonianHead_9",
     "GreekHead_A3_13",
     "GreekHead_A3_14",
-    "Ioannou",
-    "Mavros"
+    "GreekHead_A3_11",
+    "GreekHead_A3_12",
+    "WhiteHead_23",
+    "Barklem",
+    "Mavros",
+    "Sturrock",
+    "Ioannou"
 ]] call _fnc_saveToTemplate;
-["voices", ["Male01GRE","Male02GRE","Male03GRE","Male04GRE","Male05GRE","Male06GRE"]] call _fnc_saveToTemplate;
-"GreekMen" call _fnc_saveNames;
+["voices", ["Male01GRE","Male02GRE","Male03GRE","Male04GRE","Male05GRE","Male06GRE","Male01ENGB","Male02ENGB","Male03ENGB","Male04ENGB","Male05ENGB","Male01FRE","Male02FRE","Male03FRE","Male01ENGFRE","Male02ENGFRE","RHS_Male01CZ","RHS_Male02CZ","RHS_Male03CZ","RHS_Male04CZ", "RHS_Male05CZ"]] call _fnc_saveToTemplate;
+"CivMen" call _fnc_saveNames;
 
 //////////////////////////
 //       Loadouts       //
